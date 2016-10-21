@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="day">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Reference</title>
+
+	<link rel="stylesheet" type="text/css" href="css/ref.css">
+
+	<link rel="stylesheet" type="text/css" href="/libs/jqueryui/1.11.4/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="/libs/jqueryui/1.11.4/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="/libs/jqueryui/1.11.4/jquery-ui.theme.min.css">
+
+</head>
+
+<body class="cycle">
+
+	<div class="nav" id="nav"></div>
+
+	<div id="controls" >
+		<i class="fa fa-plus-circle controlSwitch"></i>
+		<div id="subcontrols" >
+
+
+			<div class="control-row">
+				Night Time: <br/>
+				<label>No <input type="radio" name="timeofday" value="day" /> </label> <label>Yes <input type="radio" name="timeofday" value="night" /></label>
+			</div>
+
+			<div class="control-row">
+				Rain: <br/>
+				<label>No <input type="radio" name="raining" value="false" /> </label> <label>Yes <input type="radio" name="raining" value="true" /></label>
+			</div>
+			<div class="control-row">
+				Wind Direction: <br/>
+				<label>West <input type="radio" name="winddirection" value="west" /></label> <label>East <input type="radio" name="winddirection" value="east" /></label>
+			</div>
+			<div class="control-row">
+				Wind Speed:<br/>
+				<label><input type="radio" name="windSpeedRadio" value="0" /> 0 </label>
+				<label><input type="radio" name="windSpeedRadio" value="1" /> 1 </label>
+				<label><input type="radio" name="windSpeedRadio" value="10" /> 10 </label>
+				<label><input type="radio" name="windSpeedRadio" value="100" /> 100 </label>
+				<br/>
+			</div>
+
+
+		</div>	
+	</div>
+
+	<div id="sky" class="cycle"></div>
+
+	<div id="nightSky">
+		<div id="starField"></div>
+		<div id="shootingStars"></div>
+		<div id="moon" class="move" onclick="turnToDay();"></div>
+	</div>
+
+	<div id="daySky">
+		<div id="clouds"></div>
+		<div id="sun" class="move" onclick="turnToNight();"></div>
+	</div>
+
+	<div id="water" class="cycle"></div>
+
+	<div id="island" class="cycle">
+		<div id="boatObj">
+				<div id="boat" class="cycle"></div>
+				<div id="boatWater" class="opacity-cycle "></div>
+		</div>
+	</div>
+
+	<div id="bgisland1" class="cycle"></div>
+	<div id="bgisland2" class="cycle"></div>
+
+	<!-- <div class="drop-splash"></div> -->
+
+	<script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="/libs/bgswitcher/jquery.bgswitcher.js"></script>
+	<script src="/libs/velocity/1.2.3/velocity.js"></script>
+	<script type="text/javascript" src="/libs/backgroundpos/jquery.backgroundpos.js"></script>
+
+	<script src="js/ref.js"></script>
+
+
+</body>
+</html>
