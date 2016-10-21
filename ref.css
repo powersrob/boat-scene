@@ -1,0 +1,376 @@
+
+/*utility*/
+
+.bold {font-weight: bold !important;}
+.middle {vertical-align: middle !important;}
+.tdno {text-decoration: none;}
+.clr, .clear {clear: both !important;;}
+
+.blue {color: #009CDE !important;}
+.green {color: #009744 !important;}
+.light-green {color: #3CC87D !important;}
+.red {color: #DA291C !important;}
+.light-red {color: #FAD6D3 !important;}
+.gray {color: #80766e !important;}
+.light-gray {color: #a69f99 !important;}
+.black {color: #000 !important;}
+.gray3 {color: #333 !important;}
+
+.s12 {font-size: 12px !important;}
+.s14 {font-size: 14px !important;}
+.s15 {font-size: 15px !important;}
+.s16 {font-size: 16px !important;}
+.s17 {font-size: 17px !important;}
+.s18 {font-size: 18px !important;}
+.s20 {font-size: 20px !important;}
+.s21 {font-size: 21px !important;}
+.s24 {font-size: 24px !important;}
+.s27 {font-size: 27px !important;}
+
+.pr5 {padding-right: 5px;}
+.pl5 {padding-left: 5px;}
+.pr10 {padding-right: 10px;}
+.pl10 {padding-left: 10px;}
+.pr15 {padding-right: 15px;}
+.pl15 {padding-left: 15px;}
+
+.hoverlink:hover {text-decoration: underline; color: #009cde;}
+
+.fl-r {float: right;}
+.fl-l {float: left;}
+
+
+
+/* General Styles */
+body {
+	height:100%;
+	width: 100%;
+	margin: 0;
+	background-color: #000;
+	overflow: hidden;
+}
+#nav,
+ul {
+	z-index: 1000;
+position: relative;
+}
+
+/*  contorls */
+#controls {
+	position: absolute;
+	left: -6px;
+	top: 256px;
+	background-color: rgb(255, 255, 255); /* IE8 Fallback */
+ 	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 0 5px 5px 0;
+	width: 0px;
+    min-height: 300px;
+	z-index: 100;
+	/*padding: 5px;*/
+	border: 3px solid transparent;
+	-webkit-transition: 	width 1s;
+	transition: 			width 1s;
+}
+#controls.active {
+	border-color: #0C70A9;
+	width: 280px;
+}
+
+#subcontrols {
+	padding: 10px;
+	width: 250px;
+	box-sizing: border-box;
+}
+
+i.controlSwitch {
+	position: absolute;
+	right: -25px;
+	font-size: 20px;
+	color: white;
+    cursor: pointer;
+}
+
+.control-row {
+    margin-bottom: 10px;
+}
+.control-row label {
+    font-size: 12px;
+}
+
+
+
+
+/*  Night Styles */
+html.night body{
+	background-color: #000;
+}
+
+
+
+
+#sky {
+    background: url(../images/sky-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 128px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+#nightSky,
+#starField {
+    height: 512px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -512px; /*default stars are hidden*/
+    z-index: 0;
+    overflow: hidden;
+}
+#starField {
+	top: 0;
+} 
+#shootingStars {
+    height: 512px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+        z-index: 1;
+}
+.stars {
+	background-color: white;
+	position: absolute;
+    height: 1px;
+    width: 1px;
+}
+
+#daySky {
+    height: 512px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -512px; /*default stars are hidden*/
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+#clouds {
+    /*height: 128px;*/
+    height: 256px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    z-index: 2;
+}
+
+.clouds {
+	position: absolute;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+#moon {background: url(../images/moon.png) repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#sun {background: url(../images/sun.png) repeat scroll 0 0 rgba(0, 0, 0, 0);} 
+
+#moon,
+#sun {
+    height: 256px;
+    width: 256px;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    z-index: 1;
+    cursor: pointer;    
+}
+
+
+
+#water {
+    background: url(../images/water-night.png) repeat-x scroll 0 0 #000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 128px;
+    z-index: 2;
+    overflow: hidden;
+}
+.waves {
+   /* background: url(images/wave.png) no-repeat scroll 0 0 transparent;*/
+    width: 130px;
+    height: 24px;
+     position: absolute;
+    left: 128px;
+    top: 228px;   
+    z-index: 3;
+}
+
+
+
+
+#bgisland1 {
+    background: url(../images/bgisland1-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 38px;
+    left: 18%;
+    position: absolute;
+    top: 103px;
+    width: 556px;
+    margin-left: -260px;
+    z-index: 3;
+}
+
+
+#bgisland2 {
+    background: url(../images/bgisland2-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 38px;
+    left: 78%;
+    position: absolute;
+    top: 103px;
+    width: 399px;
+    margin-left: -200px;
+     z-index: 3;
+}
+
+
+#island {
+    background: url(../images/island-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 190px;
+    left: 50%;
+    position: absolute;
+    top: 71px;
+    width: 520px;
+    margin-left: -260px;
+    z-index: 10;
+}
+#boatObj {
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    height: 79px;
+    width: 97px;
+    z-index: 11;
+}
+#boat {
+    background: url(../images/boat-night.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 60%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 79px;
+    width: 97px;
+    z-index: 12;
+}
+#boatWater {
+    background: url(../images/boat-water.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 60%;
+    position: absolute;
+    bottom: 16px;
+    left: 0px;
+    height: 29px;
+    width: 90px;
+    z-index: 13;
+}
+
+html.night #boatWater{
+	opacity: 0;
+}
+
+
+/* Day Styles */ 
+html.day body{
+	background-color: #006699;
+}
+html.day #sky {
+    background: url(../images/sky-day.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+html.day #water {
+    background: url(../images/water-day.png) repeat-x scroll 0 0 #006699;
+    background-color:  #006699;
+}
+html.day #bgisland1 {
+    background: url(../images/bgisland1-day.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+html.day #bgisland2 {
+    background: url(../images/bgisland2-day.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+html.day #island {
+    background: url(../images/island-day.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+html.day #boat {
+    background: url(../images/boat-day.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 60%;
+}
+
+
+
+/*Day Rain*/
+html.raining #sky {
+    background-color: #8498a3;
+}
+/*
+.rain-cloud {
+    background-color: #8498a3;
+    background-image: url(../images/rain/rain-cloud.png);
+    background-position: 0 bottom;
+    width: 100%;
+    height: 100%;
+    opacity:  1;
+}*/
+html.raining #water {
+    background: url(../images/rain/water-day-rain.png) repeat-x scroll 0 0 #006699;
+    background-color:  #006699;
+}
+html.raining {
+    filter: grayscale(90%);
+    -webkit-filter: grayscale(90%);
+}
+
+
+/*CSS3 Animations*/
+.cycle {
+    -webkit-transition:     background-color 2s;
+    transition:             background-color 2s;
+}
+ 
+.opacity-cycle {
+    -webkit-transition:     opacity 3s;  
+     transition:    opacity 3s; 
+}
+
+html {
+  transition: filter 1s;
+}
+
+
+
+/*Rain*/
+.rain {
+    /*background: url(../images/rain/rain800.png) repeat 0 0 transparent;*/
+    width: 2222px;
+    height: 2222px;
+    margin-left: -1111px;
+    margin-top: -1111px;    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+}
+
+.drop-splash {
+    background: url("../images/rain/drop-splash.png") repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 128px;
+    width: 100%;
+    z-index: 3;
+    opacity: .5;
+}   
