@@ -1,0 +1,20 @@
+{
+  "name": "boat-scene",
+  "version": "1.0.0",
+  "description": "This is a boat scene web page build using javascript animations and css.",
+  "main": "ref.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powersrob/boat-scene.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/powersrob/boat-scene/issues"
+  },
+  "homepage": "https://github.com/powersrob/boat-scene#readme"
+}

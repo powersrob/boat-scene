@@ -109,7 +109,7 @@ html.night body{
 
 
 #sky {
-    background: url(../images/sky-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/sky-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
     height: 128px;
     width: 100%;
     position: absolute;
@@ -176,8 +176,8 @@ html.night body{
 
 
 
-#moon {background: url(../images/moon.png) repeat scroll 0 0 rgba(0, 0, 0, 0);}
-#sun {background: url(../images/sun.png) repeat scroll 0 0 rgba(0, 0, 0, 0);} 
+#moon {background: url(/img/moon.png) repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#sun {background: url(/img/sun.png) repeat scroll 0 0 rgba(0, 0, 0, 0);} 
 
 #moon,
 #sun {
@@ -193,7 +193,7 @@ html.night body{
 
 
 #water {
-    background: url(../images/water-night.png) repeat-x scroll 0 0 #000;
+    background: url(/img/water-night.png) repeat-x scroll 0 0 #000;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -216,7 +216,7 @@ html.night body{
 
 
 #bgisland1 {
-    background: url(../images/bgisland1-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/bgisland1-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
     height: 38px;
     left: 18%;
     position: absolute;
@@ -228,7 +228,7 @@ html.night body{
 
 
 #bgisland2 {
-    background: url(../images/bgisland2-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/bgisland2-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
     height: 38px;
     left: 78%;
     position: absolute;
@@ -240,7 +240,7 @@ html.night body{
 
 
 #island {
-    background: url(../images/island-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/island-night.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
     height: 190px;
     left: 50%;
     position: absolute;
@@ -258,7 +258,7 @@ html.night body{
     z-index: 11;
 }
 #boat {
-    background: url(../images/boat-night.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/boat-night.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     background-size: 60%;
     position: absolute;
     top: 0px;
@@ -268,7 +268,7 @@ html.night body{
     z-index: 12;
 }
 #boatWater {
-    background: url(../images/boat-water.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/boat-water.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     background-size: 60%;
     position: absolute;
     bottom: 16px;
@@ -288,23 +288,23 @@ html.day body{
 	background-color: #006699;
 }
 html.day #sky {
-    background: url(../images/sky-day.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/sky-day.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 html.day #water {
-    background: url(../images/water-day.png) repeat-x scroll 0 0 #006699;
+    background: url(/img/water-day.png) repeat-x scroll 0 0 #006699;
     background-color:  #006699;
 }
 html.day #bgisland1 {
-    background: url(../images/bgisland1-day.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/bgisland1-day.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 html.day #bgisland2 {
-    background: url(../images/bgisland2-day.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/bgisland2-day.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 html.day #island {
-    background: url(../images/island-day.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/island-day.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 html.day #boat {
-    background: url(../images/boat-day.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/boat-day.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     background-size: 60%;
 }
 
@@ -317,14 +317,14 @@ html.raining #sky {
 /*
 .rain-cloud {
     background-color: #8498a3;
-    background-image: url(../images/rain/rain-cloud.png);
+    background-image: url(/img/rain/rain-cloud.png);
     background-position: 0 bottom;
     width: 100%;
     height: 100%;
     opacity:  1;
 }*/
 html.raining #water {
-    background: url(../images/rain/water-day-rain.png) repeat-x scroll 0 0 #006699;
+    background: url(/img/rain/water-day-rain.png) repeat-x scroll 0 0 #006699;
     background-color:  #006699;
 }
 html.raining {
@@ -352,7 +352,7 @@ html {
 
 /*Rain*/
 .rain {
-    /*background: url(../images/rain/rain800.png) repeat 0 0 transparent;*/
+    /*background: url(/img/rain/rain800.png) repeat 0 0 transparent;*/
     width: 2222px;
     height: 2222px;
     margin-left: -1111px;
@@ -364,7 +364,7 @@ html {
 }
 
 .drop-splash {
-    background: url("../images/rain/drop-splash.png") repeat scroll 0 0;
+    background: url("/img/rain/drop-splash.png") repeat scroll 0 0;
     height: 100%;
     left: 0;
     overflow: hidden;

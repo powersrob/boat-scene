@@ -13,23 +13,23 @@ var windDirection = "east";
 var windSpeed = 10;
 
 var bgs_island = $("#island").bgswitcher({
-  images: ["images/island-day.png", "images/island-night.png"],
+  images: ["img/island-day.png", "img/island-night.png"],
   start: false
 });
 var bgs_bgisland1 = $("#bgisland1").bgswitcher({
-  images: ["images/bgisland1-day.png", "images/bgisland1-night.png"],
+  images: ["img/bgisland1-day.png", "img/bgisland1-night.png"],
   start: false
 });
 var bgs_bgisland2 = $("#bgisland2").bgswitcher({
-  images: ["images/bgisland2-day.png", "images/bgisland2-night.png"],
+  images: ["img/bgisland2-day.png", "img/bgisland2-night.png"],
   start: false
 });
 var bgs_sky = $("#sky").bgswitcher({
-  images: ["images/sky-day.png", "images/sky-night.png", "images/sky-day-rain.png"],
+  images: ["img/sky-day.png", "img/sky-night.png"],
   start: false
 });
 var bgs_water = $("#water").bgswitcher({
-  images: ["images/water-day.png", "images/water-night.png"],
+  images: ["img/water-day.png", "img/water-night.png"],
   start: false
 });
 
@@ -46,7 +46,7 @@ $( document ).ready(function() {
     checkRain();
     checkNightTime();
     clouds();
-    // preloadImage('/ref/images/rain/rain-cloud.png', '.rain-cloud');
+    // preloadImage('/ref/img/rain/rain-cloud.png', '.rain-cloud');
 });
 
 
@@ -392,7 +392,7 @@ function clouds() {
 		$("#clouds img").remove();
 
 	    // $( "#clouds" ).css({
-	    //   'background-image': 'url(/ref/images/rain/rain-cloud.png)',
+	    //   'background-image': 'url(/ref/img/rain/rain-cloud.png)',
 	    //   'background-position': '0 bottom'
 	    // });
 
@@ -408,7 +408,7 @@ function clouds() {
 			var h = randomNum(35,45);
 			var w = randomNum(85,105);
 
-			clouds = clouds + "<img src='images/cloud" +cimg+ ".png' id='cloud" +i+ "' class='clouds' style='top:" + y + "px; left: " +x+ "px; height: " +h+ "px; width: "+w+"px;' />";
+			clouds = clouds + "<img src='img/cloud" +cimg+ ".png' id='cloud" +i+ "' class='clouds' style='top:" + y + "px; left: " +x+ "px; height: " +h+ "px; width: "+w+"px;' />";
 			document.getElementById("clouds").innerHTML = clouds;
 			// panClouds(i,x,w)
 
@@ -468,7 +468,7 @@ function waves() {
 		var o = randomDec(0,1);
 
 
-		waves = waves + "<img src='images/wave.png' id='wave" +i+ "' class='waves' style='top:" + y + "px; left: " +x+ "px; height: " +h+ "px; width: "+w+"px;' />";
+		waves = waves + "<img src='img/wave.png' id='wave" +i+ "' class='waves' style='top:" + y + "px; left: " +x+ "px; height: " +h+ "px; width: "+w+"px;' />";
 
 		document.getElementById("water").innerHTML = waves;
 
@@ -488,7 +488,7 @@ function waves() {
 		var o = randomDec(0,1);
 
 
-		waves = waves + "<img src='images/wave.png' id='wave" +i+ "' class='waves' style='top:" + y + "px; left: " +x+ "px; height: " +h+ "px; width: "+w+"px;' />";
+		waves = waves + "<img src='img/wave.png' id='wave" +i+ "' class='waves' style='top:" + y + "px; left: " +x+ "px; height: " +h+ "px; width: "+w+"px;' />";
 
 		document.getElementById("water").innerHTML = waves;
 
@@ -507,7 +507,7 @@ function waves() {
 		var s = randomDec(.10,.50);
 		var o = randomDec(0,1);
 
-		waves = waves + "<img src='images/wave.png' id='wave" +i+ "' class='waves' style='top:" + y + "px; left: " +x+ "px; height: " +h+ "px; width: "+w+"px;' />";
+		waves = waves + "<img src='img/wave.png' id='wave" +i+ "' class='waves' style='top:" + y + "px; left: " +x+ "px; height: " +h+ "px; width: "+w+"px;' />";
 
 		document.getElementById("water").innerHTML = waves;
 
@@ -625,7 +625,7 @@ function rain() {
     $( ".rain" ).css({
       WebkitTransform: 'rotate(' + deg + 'deg)',
       '-moz-transform': 'rotate(' + deg + 'deg)',
-      'background-image': 'url(/ref/images/rain/' + img + ')'
+      'background-image': 'url(/img/rain/' + img + ')'
     });
 
 
