@@ -408,7 +408,7 @@ function clouds() {
 			var h = randomNum(35,45);
 			var w = randomNum(85,105);
 
-			clouds = clouds + "<img src='img/cloud" +cimg+ ".png' id='cloud" +i+ "' class='clouds' style='top:" + y + "px; left: " +x+ "px; height: " +h+ "px; width: "+w+"px;' />";
+			clouds = clouds + "<img src='/img/cloud" +cimg+ ".png' id='cloud" +i+ "' class='clouds' style='top:" + y + "px; left: " +x+ "px; height: " +h+ "px; width: "+w+"px;' />";
 			document.getElementById("clouds").innerHTML = clouds;
 			// panClouds(i,x,w)
 
