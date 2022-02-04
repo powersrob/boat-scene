@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/powersrob/boat-scene/issues"
   },
-  "homepage": "https://github.com/powersrob/boat-scene#readme"
+  "homepage": "https://github.com/powersrob/boat-scene#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
